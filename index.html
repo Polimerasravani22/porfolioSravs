@@ -331,11 +331,12 @@
 
         <div class="form-container">
           <h1 style="color: whitesmoke;">Get in Touch</h1>
-          <form name="submit-to-google-sheet" id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required />
-            <input type="email" id="email" placeholder="Your Email" required />
-            <input type="text" id="phone" placeholder="Your Phone (10 digits)" required />
-            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          <form  id="contactForm" action= "https://script.google.com/macros/s/AKfycbwpvY9stXuPpuBdkCuT2ncbH2aFn0w5keAiHxOXOYEMJQtUQyAwb3zkBTufQgmAtRFUYQ/exec" name="contact-form">
+            
+            <input type="text" id="name" name="your-name" placeholder="Your Name" required />
+            <input type="email" id="email" name="your-email"  placeholder="Your Email" required />
+            <input type="text" id="phone" name="your-number" placeholder="Your Phone (10 digits)" required />
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
             <p id="errorMessage"></p>
             <p id="successMessage"></p>
